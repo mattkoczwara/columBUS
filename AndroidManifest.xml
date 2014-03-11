@@ -76,6 +76,21 @@
                 android:value="com.example.columbus.MainActivity" />
         </activity>
         
+         <activity 
+        	android:name="com.example.columbus.ShowResult"
+            android:label="@string/app_name">
+        </activity>
+        
+        
+        <activity 
+        	android:name="com.example.columbus.Preference"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        
+        
+        
         <activity 
         	android:name="com.example.columbus.Settings"
             android:label="@string/app_name"
