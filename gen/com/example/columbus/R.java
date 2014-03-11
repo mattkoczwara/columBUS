@@ -22,6 +22,19 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int adSize=0x7f010000;
+        /** 
+    A comma-separated list of the supported ad sizes. The sizes must be one of
+    BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
+    WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
+    
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adSizes=0x7f010001;
         /**  The ad unit ID. 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -30,7 +43,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int adUnitId=0x7f010001;
+        public static final int adUnitId=0x7f010002;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -38,7 +51,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraBearing=0x7f010003;
+        public static final int cameraBearing=0x7f010004;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -46,7 +59,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLat=0x7f010004;
+        public static final int cameraTargetLat=0x7f010005;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -54,7 +67,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTargetLng=0x7f010005;
+        public static final int cameraTargetLng=0x7f010006;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -62,7 +75,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraTilt=0x7f010006;
+        public static final int cameraTilt=0x7f010007;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -70,7 +83,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cameraZoom=0x7f010007;
+        public static final int cameraZoom=0x7f010008;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -84,7 +97,7 @@ containing a value of this type.
 <tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
 </table>
          */
-        public static final int mapType=0x7f010002;
+        public static final int mapType=0x7f010003;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -92,7 +105,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiCompass=0x7f010008;
+        public static final int uiCompass=0x7f010009;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -100,7 +113,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiRotateGestures=0x7f010009;
+        public static final int uiRotateGestures=0x7f01000a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -108,7 +121,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiScrollGestures=0x7f01000a;
+        public static final int uiScrollGestures=0x7f01000b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -116,7 +129,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiTiltGestures=0x7f01000b;
+        public static final int uiTiltGestures=0x7f01000c;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -124,7 +137,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomControls=0x7f01000c;
+        public static final int uiZoomControls=0x7f01000d;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -132,7 +145,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int uiZoomGestures=0x7f01000d;
+        public static final int uiZoomGestures=0x7f01000e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -140,7 +153,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int useViewLifecycle=0x7f01000e;
+        public static final int useViewLifecycle=0x7f01000f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -148,7 +161,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int zOrderOnTop=0x7f01000f;
+        public static final int zOrderOnTop=0x7f010010;
     }
     public static final class color {
         public static final int common_action_bar_splitter=0x7f040009;
@@ -209,38 +222,53 @@ containing a value of this type.
         public static final int ic_plusone_tall_off_client=0x7f02001d;
     }
     public static final class id {
-        public static final int about=0x7f050016;
+        public static final int F=0x7f050014;
+        public static final int M=0x7f05000e;
+        public static final int S=0x7f050015;
+        public static final int Set_Destination=0x7f050018;
+        public static final int T=0x7f050010;
+        public static final int W=0x7f050012;
+        public static final int about=0x7f050024;
         public static final int button_home=0x7f05000a;
         public static final int button_send=0x7f050008;
         public static final int button_work=0x7f05000c;
-        public static final int cabs_information=0x7f050013;
-        public static final int cota_information=0x7f050012;
-        public static final int depart_time=0x7f050010;
-        public static final int done_button=0x7f05000f;
-        public static final int edit_destination=0x7f05000e;
+        public static final int cabs_information=0x7f050021;
+        public static final int cota_information=0x7f050020;
+        public static final int depart_time=0x7f05001e;
+        public static final int done_button=0x7f05001d;
+        public static final int editText1=0x7f050017;
+        public static final int editText2=0x7f050019;
+        public static final int edit_destination=0x7f05001c;
         public static final int edit_message=0x7f050006;
-        public static final int edit_startpoint=0x7f05000d;
+        public static final int edit_startpoint=0x7f05001b;
         public static final int hybrid=0x7f050004;
         public static final int linearLayout1=0x7f050005;
         public static final int linearLayout2=0x7f050007;
         public static final int linearLayout3=0x7f05000b;
         public static final int linearLayout4=0x7f050009;
-        public static final int nearby_stops=0x7f050014;
+        public static final int nearby_stops=0x7f050022;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
-        public static final int options=0x7f050011;
-        public static final int preferences=0x7f050015;
+        public static final int options=0x7f05001f;
+        public static final int preferences=0x7f050023;
         public static final int satellite=0x7f050002;
+        public static final int tabHost=0x7f05000d;
         public static final int terrain=0x7f050003;
+        public static final int toggleButton1=0x7f05001a;
+        public static final int txt1=0x7f05000f;
+        public static final int txt2=0x7f050011;
+        public static final int txt3=0x7f050013;
+        public static final int txt7=0x7f050016;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f070000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int preference=0x7f030001;
-        public static final int result=0x7f030002;
-        public static final int splash=0x7f030003;
+        public static final int my_schedule=0x7f030001;
+        public static final int preference=0x7f030002;
+        public static final int result=0x7f030003;
+        public static final int splash=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -271,6 +299,7 @@ containing a value of this type.
         [CHAR LIMIT=70] 
          */
         public static final int auth_client_using_bad_version_title=0x7f060014;
+        public static final int button_add=0x7f060033;
         public static final int button_home=0x7f060022;
         public static final int button_send=0x7f060021;
         public static final int button_work=0x7f060023;
@@ -358,9 +387,19 @@ containing a value of this type.
         public static final int permission_launch_activity=0x7f060028;
         public static final int preference=0x7f060029;
         public static final int preferences=0x7f06001e;
+        public static final int tab1=0x7f060035;
+        public static final int tab2=0x7f060036;
+        public static final int tab3=0x7f060037;
+        public static final int tab4=0x7f060038;
+        public static final int tab5=0x7f060039;
+        public static final int tab6=0x7f06003a;
+        public static final int tab7=0x7f06003b;
         public static final int temp=0x7f060030;
+        public static final int textView1=0x7f060031;
+        public static final int textView2=0x7f060032;
         public static final int title_activity_bus_line_schedule=0x7f060025;
         public static final int title_activity_main=0x7f060024;
+        public static final int title_myLocations=0x7f060034;
         public static final int weathernote=0x7f06002e;
         public static final int weathernote_summ=0x7f06002f;
     }
@@ -401,13 +440,16 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AdsAttrs_adSize com.example.columbus:adSize}</code></td><td>
     The size of the ad.</td></tr>
+           <tr><td><code>{@link #AdsAttrs_adSizes com.example.columbus:adSizes}</code></td><td>
+    A comma-separated list of the supported ad sizes.</td></tr>
            <tr><td><code>{@link #AdsAttrs_adUnitId com.example.columbus:adUnitId}</code></td><td> The ad unit ID.</td></tr>
            </table>
            @see #AdsAttrs_adSize
+           @see #AdsAttrs_adSizes
            @see #AdsAttrs_adUnitId
          */
         public static final int[] AdsAttrs = {
-            0x7f010000, 0x7f010001
+            0x7f010000, 0x7f010001, 0x7f010002
         };
         /**
           <p>
@@ -432,6 +474,26 @@ containing a value of this type.
         /**
           <p>
           @attr description
+          
+    A comma-separated list of the supported ad sizes. The sizes must be one of
+    BANNER, FULL_BANNER, LEADERBOARD, MEDIUM_RECTANGLE, SMART_BANNER,
+    WIDE_SKYSCRAPER, or &lt;width&gt;x&lt;height&gt;.
+    
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.example.columbus:adSizes
+        */
+        public static final int AdsAttrs_adSizes = 1;
+        /**
+          <p>
+          @attr description
            The ad unit ID. 
 
 
@@ -444,7 +506,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.example.columbus:adUnitId
         */
-        public static final int AdsAttrs_adUnitId = 1;
+        public static final int AdsAttrs_adUnitId = 2;
         /** Attributes that can be used with a MapAttrs.
            <p>Includes the following attributes:</p>
            <table>
@@ -482,10 +544,10 @@ containing a value of this type.
            @see #MapAttrs_zOrderOnTop
          */
         public static final int[] MapAttrs = {
-            0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005,
-            0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009,
-            0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d,
-            0x7f01000e, 0x7f01000f
+            0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006,
+            0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a,
+            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
+            0x7f01000f, 0x7f010010
         };
         /**
           <p>This symbol is the offset where the {@link com.example.columbus.R.attr#cameraBearing}
