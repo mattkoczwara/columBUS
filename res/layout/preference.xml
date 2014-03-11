@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/preference" >
+
+   <PreferenceScreen
+  	android:key="name"
+  	android:title="@string/mylocation"
+  	android:summary="@string/mylocation_summ"
+  	android:defaultValue="Player 1" >
+  	
+  		<ListPreference
+            android:key="temp"
+            android:title="@string/temp" />
+  		
+  	</PreferenceScreen>
+  	 
+ 
+   <CheckBoxPreference
+  	android:key="schedule_notice"
+  	android:title="@string/myschedule"
+  	android:summary="@string/myschedule_summ"
+  	android:defaultValue="true"
+  />
+  
+   <CheckBoxPreference
+  	android:key="weather_notice"
+  	android:title="@string/weathernote"
+  	android:summary="@string/weathernote_summ"
+  	android:defaultValue="false"
+  />
+   
+</PreferenceScreen>
