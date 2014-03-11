@@ -22,4 +22,15 @@
 <string name="notifications">Notifications</string>
 <string name="map">map</string>
 <string name="permission_launch_activity"> This permission allows launching an activity in this application </string>
+
+
+<string name="preference">Preference</string>
+<string name="mylocation">My Location</string>
+<string name="mylocation_summ">Edit your locations</string>
+<string name="myschedule">My Schedule</string>
+<string name="myschedule_summ">Allow schedule alarm</string>
+<string name="weathernote">Weather Notification</string>
+<string name="weathernote_summ">Show weather in splashscreen</string>
+<string name="temp">temporary</string>
+
 </resources>

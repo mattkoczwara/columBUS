@@ -10,15 +10,17 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.columbus.R;
-import com.google.android.gms.maps.CameraUpdateFactory;
+import android.view.View.OnClickListener;
+
+/*import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-public class MainActivity extends Activity {
+*/
+public class MainActivity extends Activity implements OnClickListener {
 	static final String TAGMAIN="Main";
 	public final static String EXTRA_MESSAGE = "com.example.columbus.MESSAGE";
 	//private GoogleMap map;
@@ -26,8 +28,11 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_main);		
  	
+		View btnNewGame = findViewById(R.id.button_home);
+		btnNewGame.setOnClickListener(this);
+		
 //map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 	}
 
@@ -51,7 +56,7 @@ public class MainActivity extends Activity {
 	        	//
 	        	return true;
 	        case R.id.preferences:
-	        	//
+	        	startActivity(new Intent(this, Preference.class));
 	        	return true;
 	        case R.id.about:
 	        	//
@@ -98,4 +103,14 @@ public class MainActivity extends Activity {
 		super.onStop();
 		System.gc();
 		}
+	
+	public void onClick(View v) {
+		switch(v.getId())
+		{
+		case R.id.button_home:
+			startActivity(new Intent(this, ShowResult.class));
+			break;
+		}
+		
 	}
+}
