@@ -31,4 +31,17 @@
 <string name="weathernote">Weather Notification</string>
 <string name="weathernote_summ">Show weather in splashscreen</string>
 <string name="temp">temporary</string>
+
+<string name="textView1">Home</string>
+<string name="textView2">Work</string>
+<string name="button_add">+Add More</string>
+<string name="title_myLocations">My Locations</string>
+<string name="tab1">M</string>
+<string name="tab2">T</string>
+<string name="tab3">W</string>
+<string name="tab4">T</string>
+<string name="tab5">F</string>
+<string name="tab6">S</string>
+<string name="tab7">S</string>
+
 </resources>
