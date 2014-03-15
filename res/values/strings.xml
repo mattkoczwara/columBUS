@@ -44,4 +44,15 @@
 <string name="tab6">S</string>
 <string name="tab7">S</string>
 
+<string name="ok">OK</string>
+<string name="cancel">Cancel</string>
+
+<string name="options">Options</string>
+<string-array name="route_options">
+        <item>Best Route</item>
+        <item>Fewer Transfers</item>
+        <item>Less Walking</item>
+	</string-array>
+
+
 </resources>

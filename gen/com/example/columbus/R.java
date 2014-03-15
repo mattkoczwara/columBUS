@@ -8,6 +8,9 @@
 package com.example.columbus;
 
 public final class R {
+    public static final class array {
+        public static final int route_options=0x7f090000;
+    }
     public static final class attr {
         /** 
     The size of the ad. It must be one of BANNER, FULL_BANNER, LEADERBOARD,
@@ -228,13 +231,14 @@ containing a value of this type.
         public static final int Set_Destination=0x7f050015;
         public static final int T=0x7f05000d;
         public static final int W=0x7f05000f;
-        public static final int about=0x7f050021;
+        public static final int about=0x7f050022;
         public static final int button_home=0x7f050008;
         public static final int button_send=0x7f050007;
         public static final int button_work=0x7f050009;
-        public static final int cabs_information=0x7f05001e;
-        public static final int cota_information=0x7f05001d;
-        public static final int depart_time=0x7f05001b;
+        public static final int cabs_information=0x7f05001f;
+        public static final int cota_information=0x7f05001e;
+        public static final int depart_date=0x7f05001b;
+        public static final int depart_time=0x7f05001c;
         public static final int done_button=0x7f05001a;
         public static final int editText1=0x7f050014;
         public static final int editText2=0x7f050016;
@@ -243,11 +247,11 @@ containing a value of this type.
         public static final int edit_startpoint=0x7f050018;
         public static final int hybrid=0x7f050004;
         public static final int linearLayout1=0x7f050005;
-        public static final int nearby_stops=0x7f05001f;
+        public static final int nearby_stops=0x7f050020;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
-        public static final int options=0x7f05001c;
-        public static final int preferences=0x7f050020;
+        public static final int options_button=0x7f05001d;
+        public static final int preferences=0x7f050021;
         public static final int satellite=0x7f050002;
         public static final int tabHost=0x7f05000a;
         public static final int terrain=0x7f050003;
@@ -265,10 +269,11 @@ containing a value of this type.
         public static final int my_schedule=0x7f030001;
         public static final int preference=0x7f030002;
         public static final int result=0x7f030003;
-        public static final int splash=0x7f030004;
+        public static final int routeoptions=0x7f030004;
+        public static final int splash=0x7f030005;
     }
     public static final class menu {
-        public static final int main=0x7f0a0000;
+        public static final int main=0x7f0b0000;
     }
     public static final class string {
         public static final int about=0x7f06001f;
@@ -301,6 +306,7 @@ containing a value of this type.
         public static final int button_send=0x7f060021;
         public static final int button_work=0x7f060023;
         public static final int cabs_information=0x7f06001c;
+        public static final int cancel=0x7f06003d;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -381,6 +387,8 @@ containing a value of this type.
         public static final int myschedule_summ=0x7f06002d;
         public static final int nearby_stops=0x7f06001d;
         public static final int notifications=0x7f060026;
+        public static final int ok=0x7f06003c;
+        public static final int options=0x7f06003e;
         public static final int permission_launch_activity=0x7f060028;
         public static final int preference=0x7f060029;
         public static final int preferences=0x7f06001e;
@@ -422,11 +430,11 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f090000;
+        public static final int AppBaseTheme=0x7f0a0000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090001;
+        public static final int AppTheme=0x7f0a0001;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.

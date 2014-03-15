@@ -85,8 +85,7 @@
         <activity 
         	android:name="com.example.columbus.Preference"
             android:label="@string/app_name"
-            android:launchMode="standard"
-            android:theme="@android:style/Theme.Dialog">
+            android:launchMode="standard" >
         </activity>
         
         

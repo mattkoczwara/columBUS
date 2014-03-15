@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.content.Intent;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.columbus.R;
@@ -18,7 +20,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener{
 	static final String TAGMAIN="Main";
 	public final static String EXTRA_MESSAGE = "com.example.columbus.MESSAGE";
 	//private GoogleMap map;
@@ -27,6 +29,9 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		 View btnGo=(Button)findViewById(R.id.button_send);
+	     btnGo.setOnClickListener(this);
  	
 //map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 	}
@@ -51,8 +56,9 @@ public class MainActivity extends Activity {
 	        	//
 	        	return true;
 	        case R.id.preferences:
-	        	//
+	        	startActivity(new Intent(this, Preference.class));
 	        	return true;
+	        	
 	        case R.id.about:
 	        	//
 	        	return true;
@@ -72,6 +78,15 @@ public class MainActivity extends Activity {
 
 
 	}
+	
+	 public void onClick(View v) {
+			switch (v.getId()) {
+	  		case R.id.button_send:
+	  			startActivity(new Intent(this, ShowResult.class));
+			    break;
+	  		
+			}
+	    }
 	
 	@Override
 	protected void onResume() {

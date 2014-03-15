@@ -51,19 +51,29 @@
          android:orientation="horizontal" >
 	 
        <Button
+           android:id="@+id/depart_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:layout_weight="2.0"
+           android:text="Depart date" 
+           android:onClick="showDatePickerDialog"/>
+       
+       <Button
            android:id="@+id/depart_time"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_gravity="center_vertical"
            android:layout_weight="2.0"
-           android:text="depart now" />
+           android:text="Depart time" 
+           android:onClick="showTimePickerDialog"/>
        
        <Button
-	     android:id="@+id/options"
+	     android:id="@+id/options_button"
 	     android:layout_width="wrap_content"
 	     android:layout_height="wrap_content"
 	     android:layout_gravity="center_vertical"
-	     android:text="options" />
+	     android:text="Options" />
        
        
    </LinearLayout>
