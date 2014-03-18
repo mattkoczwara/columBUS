@@ -43,18 +43,26 @@ public class MainActivity extends Activity implements OnClickListener{
 		return true;
 	}
 	@Override
+	
+	//Main Activity
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
 	        case R.id.cota_information:
 	            //link
-	            return true;
+	        	Intent intent = new Intent(MainActivity.this, CotaInformation.class);
+	        	this.startActivity(intent); 
+	            break;
 	        case R.id.cabs_information:
 	            //link
-	            return true;
+	        	Intent intentCabs = new Intent(MainActivity.this, CabsInformation.class);
+	        	this.startActivity(intentCabs); 
+	            break;
 	        case R.id.nearby_stops:
 	        	//
-	        	return true;
+	        	Intent intentStops = new Intent(MainActivity.this, NearestStops.class);
+	        	this.startActivity(intentStops); 
+	        	break;
 	        case R.id.preferences:
 	        	startActivity(new Intent(this, Preference.class));
 	        	return true;
@@ -65,6 +73,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
+	    return true;
 	}
 	
 	//Called when the user clicks the Send button */
