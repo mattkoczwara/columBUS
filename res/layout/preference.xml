@@ -2,25 +2,28 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/preference" >
 
-   <PreferenceScreen
-  	android:key="name"
+  <PreferenceScreen
+  	android:key="setlocation"
   	android:title="@string/mylocation"
-  	android:summary="@string/mylocation_summ"
-  	android:defaultValue="Player 1" >
-  	
-  		<ListPreference
-            android:key="temp"
-            android:title="@string/temp" />
-  		
-  	</PreferenceScreen>
-  	 
+  	android:summary="@string/mylocation_summ">
+  		   <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.columbus"
+            android:targetClass="com.example.columbus.SaveLocations" />
+  		 
+  	</PreferenceScreen> 
  
-   <CheckBoxPreference
+   <PreferenceScreen
   	android:key="schedule_notice"
   	android:title="@string/myschedule"
   	android:summary="@string/myschedule_summ"
-  	android:defaultValue="true"
-  />
+  	android:defaultValue="true">
+   	 <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.columbus"
+            android:targetClass="com.example.columbus.MySchedule" />
+   
+   </PreferenceScreen>
   
    <CheckBoxPreference
   	android:key="weather_notice"
@@ -30,3 +33,4 @@
   />
    
 </PreferenceScreen>
+

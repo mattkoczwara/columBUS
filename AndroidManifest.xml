@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.columbus"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0" 
+    android:theme="@android:style/Theme.NoTitleBar">
+    
     
     <permission 
         	android:name="com.example.columbus.LAUNCHACTIVITY"
@@ -15,7 +17,7 @@
         android:protectionLevel="signature" />
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="19" />
     
     <uses-feature
@@ -26,7 +28,7 @@
     
      <uses-permission android:name="com.example.columbus.LAUNCHACTIVITY"/>
      
-<uses-permission android:name="com.example.columbus.permission.MAPS_RECEIVE" />
+	<uses-permission android:name="com.example.columbus.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     
@@ -65,12 +67,24 @@
                 <action android:name="com.example.columbus.MainActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            
+             <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+ 
+            <!-- Points to searchable activity -->
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".MainActivity" />
+ 
+            <!-- Points to searchable meta data -->
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
         </activity>
         
-        <activity 
-        	android:name="com.example.columbus.ShowResult"
-            android:label="@string/app_name">
-        </activity>
+         <provider
+            android:name=".PlaceProvider"
+            android:authorities="com.example.columbus.PlaceProvider"
+            android:exported="false" />
         
         <activity
             android:name="com.example.columbus.BusLineSchedule"
@@ -81,8 +95,45 @@
                 android:value="com.example.columbus.MainActivity" />
         </activity>
         
+        
+        
+         <activity
+            android:name="com.example.columbus.MySchedule"
+            android:label="@string/myschedule" 
+            android:launchMode="standard"
+            android:screenOrientation="unspecified"
+             />
+        
+        <activity
+            android:name="com.example.columbus.SaveLocations"
+            android:label="@string/savelocations" 
+            android:launchMode="standard"
+            android:screenOrientation="unspecified"
+            >
+           
+           
+             </activity>
+        
+         <activity 
+        	android:name="com.example.columbus.ShowResult"
+            android:label="@string/app_name">
+        </activity>
+        
+          <activity 
+        	android:name="com.example.columbus.ResultsList"
+            android:label="@string/app_name">
+        </activity>
+        
         <activity 
         	android:name="com.example.columbus.Preference"
+            android:label="@string/app_name"
+            android:launchMode="standard" >
+        </activity>
+        
+        
+        
+        <activity 
+        	android:name="com.example.columbus.Settings"
             android:label="@string/app_name"
             android:launchMode="standard"
             android:theme="@android:style/Theme.Dialog">
@@ -94,18 +145,29 @@
             android:screenOrientation="unspecified">
         </activity>
         
-    </application>
-    
-    <meta-data
+         <activity
+            android:name="com.example.columbus.CotaInformation"
+            android:label="@string/title_activity_cota_information" >
+        </activity>
+        
+        <activity
+            android:name="com.example.columbus.CabsInformation" >
+        </activity>
+        
+        <activity
+            android:name="com.example.columbus.NearestStops" >
+        </activity>
+ 
+	<uses-library android:required="true" android:name="com.google.android.maps" /> 
+	
+	 <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyB1X1jcdatogwjbEBS0KZL0nIJWHtW1yx0"  />
+            android:value="AIzaSyBYmJ679avcpUdYplEbBb-TJoQqnvG0qb0" />
     
     <meta-data 
     android:name="com.google.android.gms.version"
     android:value="@integer/google_play_services_version" />
    
-
+        
+    </application>
 </manifest>
-
-
-

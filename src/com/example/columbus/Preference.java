@@ -1,11 +1,14 @@
 package com.example.columbus;
 
-
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class Preference extends Activity {
 	/*
@@ -20,13 +23,10 @@ public class Preference extends Activity {
 		 getFragmentManager().beginTransaction()
          .replace(android.R.id.content, new SetPreferenceFragment())
          .commit();
-		
+		 
+		// final Button btnSetLocation=(Button)findViewById(R.id.button_send);
+		 //btnSetLocation.setOnClickListener(this);
 	}
-	/*
-	public static boolean doesHumanPlayFirst(Context context) {
-		return PreferenceManager.getDefaultSharedPreferences(context)
-		.getBoolean(OPT_PLAY_FIRST, OPT_PLAY_FIRST_DEF);
-	}
-	*/
+
 	
 }

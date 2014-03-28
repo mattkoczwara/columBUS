@@ -3,37 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-   
+
    <LinearLayout
     	 android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:orientation="horizontal" 
-         android:background="#ffffff" >
+         android:orientation="horizontal" >
 	 
-	 <LinearLayout
+	<LinearLayout
          android:layout_weight="2.0"
          android:layout_width="0dp"
     	 android:layout_marginLeft="10dp"
          android:layout_height="wrap_content"
          android:orientation="vertical"  >
-			
-	     <Button
-		android:id="@+id/edit_startpoint"
-		android:text="@string/mylocation"
-		android:background="#ffffff"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center_vertical"
-		/>
+		
+	      <EditText
+               android:id="@+id/edit_startpoint"
+			   android:text="@string/mylocation"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />	
+               
+          <EditText
+              	android:id="@+id/edit_destination"
+				android:text="Destination"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />	
+
 	     
-	     <Button
-		android:id="@+id/edit_destination"
-		android:text="@string/mylocation"
-		android:background="#ffffff"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center_vertical"
-		/>
+	   
 	 </LinearLayout>
 
 	 <Button
@@ -51,73 +51,43 @@
          android:orientation="horizontal" >
 	 
        <Button
+           android:id="@+id/depart_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:layout_weight="2.0"
+           android:text="Depart date" 
+           android:onClick="showDatePickerDialog"/>
+       
+       <Button
            android:id="@+id/depart_time"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_gravity="center_vertical"
            android:layout_weight="2.0"
-           android:text="depart now" />
+           android:text="Depart time" 
+           android:onClick="showTimePickerDialog"/>
        
        <Button
-	     android:id="@+id/options"
+	     android:id="@+id/options_button"
 	     android:layout_width="wrap_content"
 	     android:layout_height="wrap_content"
 	     android:layout_gravity="center_vertical"
-	     android:text="options" />
+	     android:text="Options" />
        
        
    </LinearLayout>
 
    <ScrollView
-       android:layout_width="wrap_content"
+       android:layout_width="match_parent"
        android:layout_height="match_parent"
         >
     
     <LinearLayout  
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:orientation="vertical">
-       <TextView  
-    	android:text="Create New Account"
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:layout_gravity="center"
-		android:layout_marginBottom="15dip"
-		android:textSize="40sp" 
-		/>
-
-	 <TextView  
-    	android:text="Create New Account"
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:layout_gravity="center"
-		android:layout_marginBottom="15dip"
-		android:textSize="40sp" 
-		/>
-	  <TextView  
-    	android:text="Create New Account"
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:layout_gravity="center"
-		android:layout_marginBottom="15dip"
-		android:textSize="40sp" 
-		/>
-	   <TextView  
-    	android:text="Create New Account"
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:layout_gravity="center"
-		android:layout_marginBottom="15dip"
-		android:textSize="40sp" 
-		/>
-	    <TextView  
-    	android:text="Create New Account"
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:layout_gravity="center"
-		android:layout_marginBottom="15dip"
-		android:textSize="40sp" 
-		/>
+ 
 	</LinearLayout>
    </ScrollView>
 

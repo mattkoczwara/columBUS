@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TabHost android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tabHost"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TabWidget
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@android:id/tabs"
+    />
+     <FrameLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@android:id/tabcontent"
+     >
+     <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/Mon"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:text="@string/tab1"
+     >
+     <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+   android:text="@string/Set_Source"
+    android:id="@+id/Set_Source"
+    />  
+    <EditText
+               android:id="@+id/editText1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" >
+               <requestFocus />
+           </EditText>
+
+           <TextView
+               android:id="@+id/Set_Destination"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Destination" />
+
+           <EditText
+               android:id="@+id/editText2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />
+           
+            <TextView
+               android:id="@+id/Set_Departure_Time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Departure_Time" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="time" />
+
+           <ToggleButton
+               android:id="@+id/toggleButton1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/ToggleButton" />  
+     </LinearLayout>
+     
+     <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/Tue"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+      android:text="@string/tab2"
+     >
+     <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/Set_Source"
+    android:id="@+id/Set_Source"
+    />
+     <EditText
+               android:id="@+id/editText1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" >
+               <requestFocus />
+           </EditText>
+
+           <TextView
+               android:id="@+id/Set_Destination"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Destination" />
+
+           <EditText
+               android:id="@+id/editText2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />
+            <TextView
+               android:id="@+id/Set_Departure_Time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Departure_Time" />
+<EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="time" />
+           <ToggleButton
+               android:id="@+id/toggleButton1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/ToggleButton" />
+   
+     </LinearLayout>
+     
+      <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/Wed"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:text="@string/tab3"
+     >
+     <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/Set_Source"
+    android:id="@+id/Set_Source"
+    />
+     <EditText
+               android:id="@+id/editText1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" >
+               <requestFocus />
+           </EditText>
+
+           <TextView
+               android:id="@+id/Set_Destination"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Destination" />
+
+           <EditText
+               android:id="@+id/editText2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />
+            <TextView
+               android:id="@+id/Set_Departure_Time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Departure_Time" />
+<EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="time" />
+           <ToggleButton
+               android:id="@+id/toggleButton1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/ToggleButton" />
+   
+     </LinearLayout>
+     <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/Thu"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:text="@string/tab4"
+     >
+           <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/Set_Source"
+    android:id="@+id/Set_Source"
+    />
+           <EditText
+               android:id="@+id/editText1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" >
+               <requestFocus />
+           </EditText>
+
+           <TextView
+               android:id="@+id/Set_Destination"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Destination" />
+
+           <EditText
+               android:id="@+id/editText2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />
+ <TextView
+               android:id="@+id/Set_Departure_Time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Departure_Time" />
+ <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="time" />
+           <ToggleButton
+               android:id="@+id/toggleButton1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/ToggleButton" />
+      </LinearLayout>
+      
+       <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/Fri"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:text="@string/tab5"
+     >
+     
+           <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/Set_Source"
+    android:id="@+id/Set_Source"
+    />
+           <EditText
+               android:id="@+id/editText1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" >
+               <requestFocus />
+           </EditText>
+
+           <TextView
+               android:id="@+id/Set_Destination"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Destination" />
+
+           <EditText
+               android:id="@+id/editText2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />
+ <TextView
+               android:id="@+id/Set_Departure_Time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Departure_Time" />
+ <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="time" />
+           <ToggleButton
+               android:id="@+id/toggleButton1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/ToggleButton" />
+      </LinearLayout>
+      
+         <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/Sat"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:text="@string/tab6"
+     >
+           <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/Set_Source"
+    android:id="@+id/Set_Source"
+    />
+           <EditText
+               android:id="@+id/editText1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" >
+               <requestFocus />
+           </EditText>
+
+           <TextView
+               android:id="@+id/Set_Destination"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Destination" />
+
+           <EditText
+               android:id="@+id/editText2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />
+ <TextView
+               android:id="@+id/Set_Departure_Time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Departure_Time" />
+ <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="time" />
+           <ToggleButton
+               android:id="@+id/toggleButton1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/ToggleButton" />
+      </LinearLayout>
+      <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/Sun"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:text="@string/tab7"
+     >
+           <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/Set_Source"
+    android:id="@+id/Set_Source"
+    />
+           <EditText
+               android:id="@+id/editText1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" >
+               <requestFocus />
+           </EditText>
+
+           <TextView
+               android:id="@+id/Set_Destination"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Destination" />
+
+           <EditText
+               android:id="@+id/editText2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="5"
+               android:inputType="textPostalAddress" />
+ <TextView
+               android:id="@+id/Set_Departure_Time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/Set_Departure_Time" />
+ <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="time" />
+           <ToggleButton
+               android:id="@+id/toggleButton1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/ToggleButton" />
+      </LinearLayout>
+     </FrameLayout>
+    </TabHost>
+    

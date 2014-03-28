@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
         android:orientation="vertical" 
         android:layout_height="fill_parent" 
         android:id="@+id/linearLayout1" 
         android:layout_width="fill_parent">
-      
-     <LinearLayout
+ 
+        <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:orientation="horizontal"  >
         <EditText
-            android:id="@+id/edit_message"
+            android:id="@+id/et_destination"
             android:layout_weight = "4.0"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -26,26 +26,16 @@
         
     </LinearLayout>
     
-         <LinearLayout
-         	android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:orientation="horizontal"  
-        	android:layout_gravity="center_horizontal">"
-            
-            <Button
-                 android:text="Home" 
-                 android:id="@+id/button_home"
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_marginLeft="30dp" />
-       
-            <Button 
-                android:text="Work" 
-                android:id="@+id/button_work"
-                 android:layout_width="wrap_content" 
-                 android:layout_height="wrap_content"
-                 android:layout_marginLeft="30dp"
-                 android:layout_marginRight="25dp" />
- 
-       </LinearLayout>
+        
+
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
     </LinearLayout>
+
+
+
